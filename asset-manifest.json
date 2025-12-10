@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wxy-DCIM-website/static/css/main.588fc358.css",
-    "main.js": "/wxy-DCIM-website/static/js/main.779e5574.js",
+    "main.js": "/wxy-DCIM-website/static/js/main.8424353d.js",
     "index.html": "/wxy-DCIM-website/index.html",
     "main.588fc358.css.map": "/wxy-DCIM-website/static/css/main.588fc358.css.map",
-    "main.779e5574.js.map": "/wxy-DCIM-website/static/js/main.779e5574.js.map"
+    "main.8424353d.js.map": "/wxy-DCIM-website/static/js/main.8424353d.js.map"
   },
   "entrypoints": [
     "static/css/main.588fc358.css",
-    "static/js/main.779e5574.js"
+    "static/js/main.8424353d.js"
   ]
 }
