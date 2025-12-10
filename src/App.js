@@ -5,33 +5,36 @@ import './App.css';
 const App = () => {
   const [activeTab, setActiveTab] = useState('gallery');
   const [showConfetti, setShowConfetti] = useState(false);
+  
+  // 获取GitHub Pages的基础路径
+  const basePath = window.location.pathname.includes('/wxy-DCIM-website') ? '/wxy-DCIM-website' : '';
 
   // 图片数据
   const photos = [
     {
       id: 1,
-      src: "/1.jpg",
+      src: `${basePath}/1.jpg`,
       caption: "Sweet & Lovely",
       desc: "最喜欢你温柔的笑眼，像星星一样亮晶晶 ✨",
       rotate: "rotate-2"
     },
     {
       id: 2,
-      src: "/2.jpg",
+      src: `${basePath}/2.jpg`,
       caption: "Winter Fairy",
       desc: "毛茸茸的冬天，戳戳你的脸颊，软乎乎的~ ❄️",
       rotate: "-rotate-1"
     },
     {
       id: 3,
-      src: "/4.jpg",
+      src: `${basePath}/4.jpg`,
       caption: "Graduation",
       desc: "毕业快乐！未来的每一天都要闪闪发光 🎓",
       rotate: "rotate-3"
     },
     {
       id: 4,
-      src: "/3.jpg",
+      src: `${basePath}/3.jpg`,
       caption: "Cheeky Mood",
       desc: "可可爱爱没有脑袋，捏捏脸！🤪",
       rotate: "-rotate-2"
@@ -69,7 +72,7 @@ const App = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full blur opacity-75 animate-pulse"></div>
             <div className="relative bg-white p-2 rounded-full shadow-xl mb-6 inline-block">
                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-pink-100">
-                 <img src="/1.jpg" alt="Avatar" className="w-full h-full object-cover" />
+                 <img src={`${basePath}/1.jpg`} alt="Avatar" className="w-full h-full object-cover" />
                </div>
             </div>
             <div className="absolute -bottom-2 -right-2 bg-white p-2 rounded-full shadow-lg border border-pink-100">
@@ -174,7 +177,7 @@ const App = () => {
                 <div className="order-1 md:order-2 flex justify-center">
                    <div className="relative w-64 h-64">
                       <div className="absolute inset-0 bg-gradient-to-br from-pink-300 to-purple-300 rounded-full animate-spin-slow blur-xl opacity-60"></div>
-                      <img src="/1.jpg" className="relative w-full h-full object-cover rounded-full border-8 border-white shadow-2xl" alt="Profile" />
+                      <img src={`${basePath}/1.jpg`} className="relative w-full h-full object-cover rounded-full border-8 border-white shadow-2xl" alt="Profile" />
                    </div>
                 </div>
               </div>
